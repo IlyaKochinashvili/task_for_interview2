@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h4>Идентификатор: {{ document.identifier }}</h4>
+        <h4>Серия документа: {{ document.series }}</h4>
+        <h4>Номер документа: {{ document.number }}</h4>
+        <h4>Тип документа: {{ document.document_type }}</h4>
+        <h4>Статус: {{ document.status }}</h4>
+        <h4>Дата события: {{ document.event_date }}</h4>
+        <h4>Дата записи: {{ document.date_recorded }}</h4>
+        <h4>Орган регистрации события: {{ document.event_registration_authority }}</h4>
+{% endblock %}
